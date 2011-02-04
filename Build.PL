@@ -25,7 +25,7 @@ my $build = Module::Build->new(
 		'HTTP::Response'  => 0,
 		'IO::String'      => 0,
 		'LWP::UserAgent'  => 0,
-		'Test::Exception' => '0.03',
+		'Test::Fatal'     => 0,
 		'Test::More'      => 0,
 		'Test::Requires' => '0.02',
 	},
@@ -34,6 +34,7 @@ my $build = Module::Build->new(
 	requires => {
 		'perl'              => '5.008001',
 		'Carp'              => 0,
+		'Clone'             => 0,
 		'HTTP::Config'      => '5.815',
 		'HTTP::Date'        => 0,
 		'HTTP::Headers'     => 0,
